@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Test Python Style",
+      "setup": "sudo -H pip3 install pycodestyle",
+      "run": "pycodestyle --show-source --statistics .",
+      "input": null,
+      "output": null,
+      "comparison": "exact",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "Run Unit Tests",
+      "setup": "sudo -H pip3 install pytest & sudo -H pip3 install matplotlib & sudo -H pip3 install numpy & sudo -H pip3 install pandas",
+      "run": "python ./run_tests.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": null
+    }
+  ]
+}
