@@ -274,5 +274,9 @@ if __name__ == '__main__':
     phone2 = Phone("iPhone 13 Pro Max!!!!!!!!!!!!!!", "Crimson Red", 1099, 2000, 100, "2234")
     print("Size of phone2: " + str(sys.getsizeof(phone2)) + " bytes")
 
+    for i in range(1, 51):
+        phone = Phone("a" * i, "n" * i, 1099, 2000, 100, "2234")
+        print(i, sys.getsizeof(phone))
+
 apple = Phone("iPhone 13", "Pink", 1099, 2000, 100, "2234")
 samsung = Phone("Samsung Galaxy S21", "Purple", 999, 1000, 200, "1234")
